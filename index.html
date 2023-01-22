@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="location-input col-xs-12">
+            <form action="">
+                <input type="text" id="input-city" class="input-city" name="city" placeholder="Enter the city...">
+                <button type="button" class="btn-srch"><span class="material-symbols-outlined">
+                    search
+                </span></button>
+                <button type="button" class="btn-cur-loc"><span class="material-symbols-outlined">
+                    my_location
+                </span></button>
+            </form>
+        </div>
+        <div class="weather-container">
+            <div class="row">
+                <div class="main-info col-xs-6 col-sm-4">
+                    <div class="city-location">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span> Kyiv, Ukraine
+                    </div>
+                    <div class="date-and-time">
+                        <div class="date">
+                            January 19, 2023
+                        </div>
+                        <div class="day-of-the-week">
+                            Thursday
+                        </div>
+                    </div>
+                    <div class="temperature">
+                        <div class="current-temperature">
+                            25&deg
+                        </div>
+                        <div class="feels-like">
+                            Feels like 23&deg
+                        </div>
+                    </div>
+                </div>
+                <div class="general-conditions col-xs-6 col-sm-4">
+                    <img src="" alt="" class="weather-img">
+                    <div class="gen-desc">Cloudy</div>
+                </div>
+                <div class="additional-conditions col-xs-12 col-sm-4">
+                    <div class="additional-condition pressure col-xs-6 col-sm-12">
+                        <span class="material-symbols-outlined">
+                            thermometer
+                        </span>
+                        1023.0 mb
+                    </div>
+                    <div class="additional-condition humidity col-xs-6 col-sm-12">
+                        <span class="material-symbols-outlined">
+                            humidity_low
+                        </span>
+                        60%
+                    </div>
+                    <div class="additional-condition wind-speed col-xs-6 col-sm-12">
+                        <span class="material-symbols-outlined">
+                            air
+                        </span>
+                        10 km/h
+                    </div>
+                    <div class="additional-condition wind-direction col-xs-6 col-sm-12">
+                        <span class="material-symbols-outlined">
+                            explore
+                        </span>
+                        North-East
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>

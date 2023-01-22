@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    
+}
+
+material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+/* mobile (xs)*/
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    margin: 100px auto 0 auto;
+    background-color: rgb(123, 191, 255);
+}
+
+
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.col-xs-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+.col-xs-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.col-xs-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-xs-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.col-xs-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-xs-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.col-xs-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+.location-input {
+    
+    margin-bottom: 20px;
+}
+
+.location-input input {
+    border: 1px solid white;
+    background: none;
+    font-size: 20px;
+    width: calc(100% - (34px + 4px) * 2 );
+    max-width: 450px;
+}
+
+.location-input input::placeholder{
+    color: white;
+}
+
+.location-input input:focus-within{
+    outline: white solid 1px;
+}
+
+.location-input [class*="btn-"]{
+    border: 1px solid white;
+    background: none;
+    font-size: 20px;
+}
+.location-input [class*="btn-"]:hover{
+    outline: white solid 1px;
+}
+.location-input [class*="btn-"] span {
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+}
+
+.weather-container {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.main-info {
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-info .city-location {
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.main-info .city-location span{
+    position: absolute;
+    line-height: 40px;
+    font-size: 20px;
+    left: -40px
+}
+
+.temperature {
+    margin-top: 10px;
+}
+
+.current-temperature {
+    position: relative;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.current-temperature::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 50px;
+    background: left 0px top 0px / contain no-repeat url(high-temperature-icon.svg);
+    position: absolute;
+    left: -40px;
+    top: 7px;
+    
+}
+
+.general-conditions img{
+    width: 100%;
+}
+
+.general-conditions .gen-desc{
+    text-align: center;
+}
+
+.additional-conditions{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    /* justify-content: flex-end; */
+}
+
+.additional-condition{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.additional-condition span {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/* tablet (sm)*/
+@media(min-width: 768px) {
+    .container {
+        max-width: none;
+        width: 720px;
+    }
+
+    .col-sm-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .col-sm-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .additional-conditions {
+        padding-left: 35px;
+        row-gap: 20px;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    
+}
