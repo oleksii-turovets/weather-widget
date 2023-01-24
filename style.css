@@ -24,7 +24,7 @@ material-symbols-outlined {
     padding-top: 25px;
     padding-bottom: 55px;
     margin: 100px auto 0 auto;
-    background-color: rgb(123, 191, 255);
+    background: linear-gradient( 0deg, rgb(123, 191, 255), rgb(123, 170, 255)) ;
 }
 
 
